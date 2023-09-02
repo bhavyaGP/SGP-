@@ -17,28 +17,23 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #222;
+    background: black;
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
 }
 
 .heading {
     text-align: center;
-    /* margin-top:  */
     padding-bottom: 50px;
 }
 
 .wrapper {
     display: flex;
     max-width: 100%;
-    /* Allow the wrapper to take up the available width */
     justify-content: space-between;
 }
 
 .card {
     width: 240px;
-    /* Adjust card width based on your preference */
-    /* Remove fixed height to make the card square */
     height: 400px;
     padding: 2rem 1rem;
     background: #fff;
@@ -46,10 +41,9 @@ html,body {
     display: flex;
     align-items: flex-end;
     box-shadow: 2px 0px 7px white;
-    /* Updated box-shadow color */
     transition: 0.5s ease-in-out;
     margin-right: 2%;
-    /* Add a small gap between cards */
+
 }
 
 .card:last-child {
@@ -57,9 +51,8 @@ html,body {
 }
 
 .card:hover {
-    transform: translateY(20px);
-    box-shadow: 2px 0px 10px rgba(14, 125, 119, 0.7);
-    /* Light red box shadow on hover */
+    transform: translateY(-40px);
+    box-shadow: 10px 2px 20px rgba(255, 0, 0, 0.7);
 }
 
 .card::before {
