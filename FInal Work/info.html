@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tick.css">
+</head>
+<body>
+        <div class="reservation" id="reservation">
+            <form action="" method="post">
+                <h3>Make a Reservation</h3>
+                <div class="flex">
+
+                <div class="box">
+                    <p>your name <span>*</span></p>
+                    <input type="text" name="name" maxlength="50" placeholder="Enter your name" class="imput">
+                </div>
+
+                <div class="box">
+                    <p>your number <span>*</span></p>
+                    <input type="number" name="number" maxlength="10" min="0" placeholder="Enter your number" class="input">
+                </div>
+
+                <div class="box">
+                    <p>rooms <span>*</span></p>
+                    <select name="rooms" class="input" required>
+                        <option value="1" selected>1 room</option>
+                        <option value="2">2 room</option>
+                        <option value="2">3 room</option>
+                        <option value="2">4 room</option>
+                        <option value="2">5 room</option>
+                        <option value="2">6 room</option>
+                    </select>
+                </div>
+                
+                <div class="box">
+                    <p>check-in <span>*</span></p>
+                    <input type="date" name="check-in" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>check-out <span>*</span></p>
+                    <input type="date" name="check-out" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>adults <span>*</span></p>
+                    <select name="adults" class="input" required>
+                        <option value="1" selected>1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="2">3 adults</option>
+                        <option value="2">4 adults</option>
+                        <option value="2">5 adults</option>
+                        <option value="2">6 adults</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <p>childs <span>*</span></p>
+                    <select name="childs" class="input" required>
+                        <option value="1" selected>1 child</option>
+                        <option value="2">2 childs</option>
+                        <option value="2">3 childs</option>
+                        <option value="2">4 childs</option>
+                        <option value="2">5 childs</option>
+                        <option value="2">6 childs</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="book now" name="book" class="btn">
+
+            </form>
+        </div>
+                <a  onclick="openPopup()" class="btn" style="background-color: black; color: red;">Book Now</a>
+                <div class="popup" id="popup">
+                    <img src="tick.webp" alt="tick">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been successfully submitted.</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+
+
+    <script>
+        let popup=document.getElementById("popup");
+
+        function openPopup()
+        {
+            popup.classList.add("open-popup");
+        }
+        function closePopup()
+        {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
